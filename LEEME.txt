@@ -1,11 +1,9 @@
-MINIMARKET JS - DEMOSTRACION PARA WINDOWS
+MINIMARKET JS - DEMOSTRACION WINDOWS - VERSION 2
 
-Esta rama contiene solamente el paquete de demostracion con datos ficticios.
-No incluye contactos reales, credenciales del negocio ni sesiones de Codex.
-No publica un sitio de produccion.
+Corregido: el arranque no necesita extraer XZ. PostgreSQL Windows ya viene incluido.
+Descarga MINIMARKET-JS-INICIO.zip, extrae TODO en una carpeta nueva y abre ABRIR-MINIMARKET.cmd.
+El primer inicio necesita Internet para los otros componentes.
+El navegador y ACCESO.txt se abren cuando la aplicacion arranca.
 
-Descarga MINIMARKET-JS-INICIO.zip, extrae todo y abre ABRIR-MINIMARKET.cmd.
-El primer inicio necesita Internet para preparar los componentes.
-El navegador y ACCESO.txt se abren automaticamente cuando arranca.
-
-Aplicacion y restauracion verificadas en Linux. Asistente Windows pendiente de verificacion nativa.
+Solo datos ficticios. Sin contactos reales ni credenciales del negocio.
+Aplicacion y datos verificados en Linux; arranque nativo Windows pendiente de comprobacion.
