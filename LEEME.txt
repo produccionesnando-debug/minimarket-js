@@ -1,9 +1,39 @@
-MINIMARKET JS - DEMOSTRACION WINDOWS - VERSION 2
+MINIMARKET JS - DEMOSTRACION WINDOWS V3 - REDISENO PROFESIONAL
+Windows 10/11 de 64 bits. Solo datos ficticios.
 
-Corregido: el arranque no necesita extraer XZ. PostgreSQL Windows ya viene incluido.
-Descarga MINIMARKET-JS-INICIO.zip, extrae TODO en una carpeta nueva y abre ABRIR-MINIMARKET.cmd.
-El primer inicio necesita Internet para los otros componentes.
-El navegador y ACCESO.txt se abren cuando la aplicacion arranca.
+1. Cierra la demostracion anterior. Conserva su carpeta y sus datos.
+2. Extrae TODO este ZIP en una CARPETA NUEVA.
+3. Abre MINIMARKET-JS y haz doble clic en ABRIR-MINIMARKET.cmd.
+4. Espera la preparacion inicial con Internet; no cierres la ventana.
+5. Se abriran el navegador y ACCESO.txt. Copia el correo y la clave e inicia sesion.
 
-Solo datos ficticios. Sin contactos reales ni credenciales del negocio.
-Aplicacion y datos verificados en Linux; arranque nativo Windows pendiente de comprobacion.
+No necesitas escribir comandos ni instalar Node.js, PostgreSQL o Docker.
+PostgreSQL viene extraido, como en la version 2: NO requiere XZ.
+Si falta Microsoft Visual C++, se abre su descarga oficial; instalalo y vuelve a iniciar.
+
+PARA PROBAR
+Panel principal: calendario semanal, indicadores, acciones rapidas, stock bajo y graficos.
+Menu: Proveedores, Caja y ventas, Inventario, Gastos y comprobantes, Finanzas, Estadisticas, PedidosYa.
+Los botones de venta, pedido, gasto, proveedor, producto y caja abren sus formularios.
+Los datos de ejemplo estan en octubre de 2026; ajusta el rango del informe si lo abres mas adelante.
+Las estadisticas de esta instancia ya muestran las operaciones ficticias sin cambiar de modo.
+CAPTURA-INICIO.png y CAPTURA-MOVIL.png muestran la aplicacion en funcionamiento.
+
+CONSERVAR PRUEBAS
+La base vive en .local de ESTA carpeta y conserva tus movimientos entre sesiones.
+Los datos de tu demostracion anterior permanecen en SU carpeta; no se copian automaticamente.
+No borres carpetas .local si quieres conservar sus pruebas.
+Para detener: Ctrl+C en la ventana del iniciador. Para volver: ABRIR-MINIMARKET.cmd.
+La direccion se abre automaticamente y pertenece a TU computador, no a un servidor publico.
+
+LIMITES
+Todo es demostracion; no contiene contactos, movimientos ni accesos reales del negocio.
+PedidosYa permite probar estados y consultar stock, sin conexion externa ni descuento automatico.
+Tienda, clientes, IVA, sueldos e instalacion con modo sin conexion siguen pendientes.
+No publica nada en Internet ni ejecuta transferencias o pagos bancarios.
+
+VERIFICACION
+37 pruebas automaticas, build y TypeScript aprobados en Linux.
+Restauracion repetible y pantallas del paquete comprobadas en navegador.
+El iniciador nativo de Windows no se puede ejecutar desde este entorno Linux.
+Se conserva el mecanismo de Node/PostgreSQL de la v2 confirmada funcionando por el usuario.
