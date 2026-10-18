@@ -1,39 +1,54 @@
-MINIMARKET JS - DEMOSTRACION WINDOWS V3 - REDISENO PROFESIONAL
-Windows 10/11 de 64 bits. Solo datos ficticios.
+MINIMARKET JS - WINDOWS V4 - PUNTO DE VENTA / ETAPA 5
+Windows 10/11 de 64 bits. INSTANCIA COMPLETA CON DATOS FICTICIOS.
 
-1. Cierra la demostracion anterior. Conserva su carpeta y sus datos.
-2. Extrae TODO este ZIP en una CARPETA NUEVA.
-3. Abre MINIMARKET-JS y haz doble clic en ABRIR-MINIMARKET.cmd.
-4. Espera la preparacion inicial con Internet; no cierres la ventana.
-5. Se abriran el navegador y ACCESO.txt. Copia el correo y la clave e inicia sesion.
+ABRIR SIN PROGRAMAR
+1. Cierra la aplicacion anterior y conserva una copia de su carpeta completa.
+2. Extrae TODO este ZIP en una carpeta nueva.
+3. En MINIMARKET-JS haz doble clic en ABRIR-MINIMARKET.cmd.
+4. Espera con Internet la primera preparacion. No cierres esa ventana.
+5. Se abren navegador y ACCESO.txt. Usa el correo y clave de ese archivo.
+No requiere instalar Node.js, Docker o PostgreSQL por separado. PostgreSQL ya esta extraido, sin XZ.
 
-No necesitas escribir comandos ni instalar Node.js, PostgreSQL o Docker.
-PostgreSQL viene extraido, como en la version 2: NO requiere XZ.
-Si falta Microsoft Visual C++, se abre su descarga oficial; instalalo y vuelve a iniciar.
+PROBAR VENTAS
+- Menu Ventas y Caja. Hay una caja ficticia abierta para probar.
+- Escanea 000000001005 o escribe ese codigo y presiona Enter: leche ficticia de prueba.
+- Tambien busca por nombre y pulsa un producto. Repite el codigo para aumentar unidades.
+- Revisa el carrito, selecciona efectivo/tarjeta/transferencia/mixto y pulsa Cobrar.
+- En efectivo ingresa lo recibido para calcular vuelto. F2 enfoca el lector; F8 cobra.
+- Lectores USB/Bluetooth en modo teclado; configura Enter o Tab en Configurar lector.
+- La barra superior distingue ventas, saldo neto, efectivo esperado y utilidad estimada.
+- El comprobante interno se abre e imprime desde el enlace posterior a la venta.
+NO ES BOLETA TRIBUTARIA. No procesa tarjetas ni ejecuta transferencias.
 
-PARA PROBAR
-Panel principal: calendario semanal, indicadores, acciones rapidas, stock bajo y graficos.
-Menu: Proveedores, Caja y ventas, Inventario, Gastos y comprobantes, Finanzas, Estadisticas, PedidosYa.
-Los botones de venta, pedido, gasto, proveedor, producto y caja abren sus formularios.
-Los datos de ejemplo estan en octubre de 2026; ajusta el rango del informe si lo abres mas adelante.
-Las estadisticas de esta instancia ya muestran las operaciones ficticias sin cambiar de modo.
-CAPTURA-INICIO.png y CAPTURA-MOVIL.png muestran la aplicacion en funcionamiento.
+OTRAS FUNCIONES
+Inventario > Importar productos desde Excel: usa CATALOGO-DEMO.xlsx o el ejemplo descargable.
+Relaciona columnas, revisa duplicados/errores y confirma antes de modificar precios o stock.
+Clientes y creditos: crea/consulta clientes, vende a credito autorizado y registra abonos parciales.
+Mermas: motivo, unidades y foto opcional privada, sin crear ventas ni salidas de dinero.
+Buscar ventas y devoluciones: abre un comprobante y devuelve unidades; permite enlazar una venta de cambio.
+Precios por canal: sugerencia PedidosYa +20% configurable o precio fijo por producto, sin publicar.
+Caja y ventas (turnos): gastos, retiros, observaciones y cierre con confirmacion.
+Se conservan calendario, proveedores, pedidos, facturas e informes.
 
-CONSERVAR PRUEBAS
-La base vive en .local de ESTA carpeta y conserva tus movimientos entre sesiones.
-Los datos de tu demostracion anterior permanecen en SU carpeta; no se copian automaticamente.
-No borres carpetas .local si quieres conservar sus pruebas.
-Para detener: Ctrl+C en la ventana del iniciador. Para volver: ABRIR-MINIMARKET.cmd.
-La direccion se abre automaticamente y pertenece a TU computador, no a un servidor publico.
+CONSERVAR PRUEBAS / ACTUALIZAR
+La base vive en .local de cada carpeta. No la borres.
+La carpeta nueva comienza con una demostracion nueva; la anterior conserva sus pruebas.
+Para actualizar la carpeta anterior, primero conserva una COPIA COMPLETA y cierra la aplicacion.
+Luego extrae el contenido de MINIMARKET-JS sobre esa carpeta, reemplazando archivos de aplicacion.
+Conserva .local, comprobantes-demo y ACCESO.txt de la copia anterior; no reemplaces tus archivos locales.
+Al iniciar se actualizan dependencias y migraciones sin volver a sembrar ni borrar movimientos.
+No necesitas trasladar datos para probar esta version; puedes conservar ambas carpetas separadas.
+Para detener: Ctrl+C. Para volver: ABRIR-MINIMARKET.cmd.
 
-LIMITES
-Todo es demostracion; no contiene contactos, movimientos ni accesos reales del negocio.
-PedidosYa permite probar estados y consultar stock, sin conexion externa ni descuento automatico.
-Tienda, clientes, IVA, sueldos e instalacion con modo sin conexion siguen pendientes.
-No publica nada en Internet ni ejecuta transferencias o pagos bancarios.
+LIMITE Y PRIVACIDAD
+Todo es ficticio. No incluye los 25 proveedores/contactos privados ni datos reales del negocio.
+Fechas de ejemplo: octubre de 2026. Ajusta el rango en los informes si lo abres mas adelante.
+Cualquier pago, credito, merma y devolucion del paquete son solo pruebas locales.
+PedidosYa sigue desconectado. Camara de barcode, SII, terminales y tienda online siguen pendientes.
+No publica la app en Internet. La direccion que se abre pertenece a tu computador.
 
 VERIFICACION
-37 pruebas automaticas, build y TypeScript aprobados en Linux.
-Restauracion repetible y pantallas del paquete comprobadas en navegador.
-El iniciador nativo de Windows no se puede ejecutar desde este entorno Linux.
-Se conserva el mecanismo de Node/PostgreSQL de la v2 confirmada funcionando por el usuario.
+45 pruebas: 24 unitarias, 8 de integracion y 13 de navegador; build/TypeScript.
+Instalacion de dependencias y restauracion nueva/actualizacion probadas en Linux.
+No se ejecuto el iniciador nativo de Windows en esta nube.
+Se conserva el mecanismo de Node/PostgreSQL de la version confirmada funcionando por el usuario.
