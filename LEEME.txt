@@ -1,54 +1,53 @@
-MINIMARKET JS - WINDOWS V4 - PUNTO DE VENTA / ETAPA 5
-Windows 10/11 de 64 bits. INSTANCIA COMPLETA CON DATOS FICTICIOS.
+MINIMARKET JS - WINDOWS V5 - RESUMEN FINANCIERO Y ENCARGOS
+Windows 10/11 de 64 bits. Todos los datos son FICTICIOS.
 
 ABRIR SIN PROGRAMAR
-1. Cierra la aplicacion anterior y conserva una copia de su carpeta completa.
+1. Cierra la demostracion anterior y conserva su carpeta completa.
 2. Extrae TODO este ZIP en una carpeta nueva.
 3. En MINIMARKET-JS haz doble clic en ABRIR-MINIMARKET.cmd.
-4. Espera con Internet la primera preparacion. No cierres esa ventana.
+4. Espera la primera preparacion con Internet. No cierres la ventana.
 5. Se abren navegador y ACCESO.txt. Usa el correo y clave de ese archivo.
-No requiere instalar Node.js, Docker o PostgreSQL por separado. PostgreSQL ya esta extraido, sin XZ.
+No requiere instalar Node.js, PostgreSQL o Docker por separado.
+PostgreSQL viene extraido: no requiere XZ. Conserva el iniciador que ya pudiste usar.
 
-PROBAR VENTAS
-- Menu Ventas y Caja. Hay una caja ficticia abierta para probar.
-- Escanea 000000001005 o escribe ese codigo y presiona Enter: leche ficticia de prueba.
-- Tambien busca por nombre y pulsa un producto. Repite el codigo para aumentar unidades.
-- Revisa el carrito, selecciona efectivo/tarjeta/transferencia/mixto y pulsa Cobrar.
-- En efectivo ingresa lo recibido para calcular vuelto. F2 enfoca el lector; F8 cobra.
-- Lectores USB/Bluetooth en modo teclado; configura Enter o Tab en Configurar lector.
-- La barra superior distingue ventas, saldo neto, efectivo esperado y utilidad estimada.
-- El comprobante interno se abre e imprime desde el enlace posterior a la venta.
-NO ES BOLETA TRIBUTARIA. No procesa tarjetas ni ejecuta transferencias.
+VENTAS Y CAJA
+- Barra fija: Ventas del dia y Saldo neto del dia destacados.
+- Saldo neto = ventas netas menos egresos operativos. NO ES UTILIDAD CONTABLE.
+- Fila compacta: 4 medios de cobro, credito pendiente y efectivo esperado.
+- En celular desliza esa fila para ver todos los indicadores.
+- Selecciona fecha o turno y pulsa Ver. Dia completo corresponde a tus cajas.
+- Caja esperada por dia: cajas abiertas al terminar ese dia; por turno cerrado, valor del cierre.
+- Escanea 000000001005 y Enter para probar leche ficticia; repite para sumar cantidad.
+- Prueba efectivo, tarjeta, transferencia, mixto, fiado, abonos, merma y devoluciones.
+- Los anticipos cobran dinero sin crear ventas. No vuelven a cobrarse al completar el pedido.
 
-OTRAS FUNCIONES
-Inventario > Importar productos desde Excel: usa CATALOGO-DEMO.xlsx o el ejemplo descargable.
-Relaciona columnas, revisa duplicados/errores y confirma antes de modificar precios o stock.
-Clientes y creditos: crea/consulta clientes, vende a credito autorizado y registra abonos parciales.
-Mermas: motivo, unidades y foto opcional privada, sin crear ventas ni salidas de dinero.
-Buscar ventas y devoluciones: abre un comprobante y devuelve unidades; permite enlazar una venta de cambio.
-Precios por canal: sugerencia PedidosYa +20% configurable o precio fijo por producto, sin publicar.
-Caja y ventas (turnos): gastos, retiros, observaciones y cierre con confirmacion.
-Se conservan calendario, proveedores, pedidos, facturas e informes.
+WHATSAPP - PEDIDOS Y ENCARGOS
+- Abre ese menu. Hay una conversacion y dos encargos FICTICIOS.
+- Pedido de leche: confirmar y reservar, registrar anticipo, completar venta y marcar entregado.
+- Encargo especial: permanece sin producto ni precio hasta asociarlo al catalogo real de prueba.
+- En celular cambia entre Conversaciones, Mensajes y Cliente y pedidos.
+- Las respuestas rapidas solo preparan/copian texto. No envian mensajes.
+- Para usar el catalogo de esta instancia ficticia, deja sin marcar la casilla de conversacion demo.
 
-CONSERVAR PRUEBAS / ACTUALIZAR
-La base vive en .local de cada carpeta. No la borres.
-La carpeta nueva comienza con una demostracion nueva; la anterior conserva sus pruebas.
-Para actualizar la carpeta anterior, primero conserva una COPIA COMPLETA y cierra la aplicacion.
-Luego extrae el contenido de MINIMARKET-JS sobre esa carpeta, reemplazando archivos de aplicacion.
-Conserva .local, comprobantes-demo y ACCESO.txt de la copia anterior; no reemplaces tus archivos locales.
-Al iniciar se actualizan dependencias y migraciones sin volver a sembrar ni borrar movimientos.
-No necesitas trasladar datos para probar esta version; puedes conservar ambas carpetas separadas.
-Para detener: Ctrl+C. Para volver: ABRIR-MINIMARKET.cmd.
+GOOGLE / META
+El acceso tradicional funciona. Google permanece deshabilitado sin credenciales propias.
+No hay conexion activa con WhatsApp. El webhook oficial esta preparado, deshabilitado por defecto.
+GUIA-ETAPA6.md explica credenciales, invitaciones Google y configuracion Meta.
+No contiene secretos Google/Meta ni contactos, ventas o accesos reales de tu negocio.
+No publica nada en Internet, procesa tarjetas ni envia mensajes externos.
+Comprobantes internos, no boletas tributarias SII.
 
-LIMITE Y PRIVACIDAD
-Todo es ficticio. No incluye los 25 proveedores/contactos privados ni datos reales del negocio.
-Fechas de ejemplo: octubre de 2026. Ajusta el rango en los informes si lo abres mas adelante.
-Cualquier pago, credito, merma y devolucion del paquete son solo pruebas locales.
-PedidosYa sigue desconectado. Camara de barcode, SII, terminales y tienda online siguen pendientes.
-No publica la app en Internet. La direccion que se abre pertenece a tu computador.
+CONSERVAR PRUEBAS
+La base esta en .local de cada carpeta. No la borres.
+Una carpeta nueva no importa automaticamente pruebas anteriores.
+Para actualizar una carpeta previa: primero copia TODA la carpeta, detiene el servidor y
+actualiza los archivos del paquete conservando .local, ACCESO.txt y comprobantes.
+El restaurador aplica solo migraciones pendientes y no vuelve a sembrar datos existentes.
+Los nuevos encargos de ejemplo se incluyen solo en instalaciones nuevas.
+Para detener usa Ctrl+C en el iniciador; para volver, ABRIR-MINIMARKET.cmd.
 
 VERIFICACION
-45 pruebas: 24 unitarias, 8 de integracion y 13 de navegador; build/TypeScript.
-Instalacion de dependencias y restauracion nueva/actualizacion probadas en Linux.
-No se ejecuto el iniciador nativo de Windows en esta nube.
-Se conserva el mecanismo de Node/PostgreSQL de la version confirmada funcionando por el usuario.
+51 pruebas: 24 unitarias, 13 de integracion y 14 de navegador; build y TypeScript.
+Paquete de produccion/restauracion nueva y actualizacion probados en Linux.
+El inicio nativo de Windows no puede ejecutarse en esta nube; se conserva el mecanismo
+que confirmaste funcionando. Google y Meta requieren validacion externa autorizada.
