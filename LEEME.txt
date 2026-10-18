@@ -1,0 +1,11 @@
+MINIMARKET JS - DEMOSTRACION PARA WINDOWS
+
+Esta rama contiene solamente el paquete de demostracion con datos ficticios.
+No incluye contactos reales, credenciales del negocio ni sesiones de Codex.
+No publica un sitio de produccion.
+
+Descarga MINIMARKET-JS-INICIO.zip, extrae todo y abre ABRIR-MINIMARKET.cmd.
+El primer inicio necesita Internet para preparar los componentes.
+El navegador y ACCESO.txt se abren automaticamente cuando arranca.
+
+Aplicacion y restauracion verificadas en Linux. Asistente Windows pendiente de verificacion nativa.
