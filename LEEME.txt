@@ -1,4 +1,4 @@
-MINIMARKET JS - WINDOWS V6 - IDENTIDAD, BIENVENIDA Y TICKETS
+MINIMARKET JS - WINDOWS V7 - PUNTO DE VENTA, PESO Y TICKETS
 Windows 10/11 de 64 bits. Instancia completa con DATOS FICTICIOS.
 
 ABRIR SIN PROGRAMAR
@@ -58,7 +58,32 @@ El logo cargado y configuracion de mensajes permanecen en la base de esa carpeta
 Ctrl+C detiene el iniciador. ABRIR-MINIMARKET.cmd vuelve a abrirlo.
 
 VERIFICACION
-56 pruebas: 24 unitarias, 16 de integracion y 16 de navegador; build y TypeScript.
+61 pruebas: 26 unitarias, 18 de integracion y 17 de navegador; build y TypeScript.
 Prueba adicional: fallo simulado de impresion automatica conserva venta y stock sin duplicados.
 Formatos PDF 58/80 mm comprobados. No equivale a certificar un modelo de impresora fisica.
 El iniciador nativo de Windows no se ejecuta en esta nube Linux; conserva el mecanismo anterior.
+
+NUEVO PUNTO DE VENTA - INSTRUCCION 9
+- Listado amplio (70% en computador), cobro lateral; tabla con codigo, precio, cantidad/peso y subtotal.
+- Escaneo continuo con Enter/Tab; repetir un codigo de unidad suma cantidad. F2 enfoca el lector.
+- + Nuevo producto: exclusivo de administradores; conserva la venta y permite agregar de inmediato.
+- Codigo interno automatico MMJS, manual o codigo del fabricante. Los internos no son GTIN oficiales.
+- Inventario -> Mostrar en venta rapida configura botones con productos reales del catalogo.
+- Prueba de peso: pulsa DEMO · Queso por kilogramo o escanea su codigo MMJS visible en el boton/listado.
+- Ingresa 350 gramos. A 9000/kg el subtotal es 3150. Repetir pide otra porcion y conserva el detalle.
+- Stock en gramos exactos, mostrado en kg. Redondeo del importe configurable en Precios por canal.
+- Etiquetas: abre /etiquetas desde Inventario para Code 128 interno y dialogo de impresion.
+- Balanza: /balanza solo prepara un patron DESACTIVADO; faltan modelo, etiquetas y mapeo reales.
+- Ticket con 3 mm de margen blanco interior mas el margen de pagina.
+- Ver GUIA-ETAPA9.md y CAPTURA-VENTAS-NUEVA.png.
+
+ACTUALIZAR CONSERVANDO LOGO, CUENTAS Y MOVIMIENTOS
+1. En la ventana negra del iniciador anterior pulsa Ctrl+C y espera que se cierre.
+2. Guarda una COPIA COMPLETA de tu carpeta anterior; no la borres.
+3. Extrae este ZIP en otra carpeta.
+4. En el Explorador de Windows activa Vista -> Elementos ocultos.
+5. Copia desde la anterior a la nueva la carpeta .local, el archivo ACCESO.txt y
+   la carpeta comprobantes-demo. Reemplaza esos archivos en la carpeta NUEVA.
+6. En la nueva haz doble clic en ABRIR-MINIMARKET.cmd y espera la actualizacion.
+La base y tu logo estan en .local. No copies solo el PNG: conserva la carpeta completa.
+Si prefieres probar desde cero, no copies nada y conserva la anterior completa para volver.
