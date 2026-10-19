@@ -1,4 +1,4 @@
-MINIMARKET JS - WINDOWS V7 - PUNTO DE VENTA, PESO Y TICKETS
+MINIMARKET JS - WINDOWS V8 - CAJA RAPIDA, INVENTARIO Y RECUPERACION
 Windows 10/11 de 64 bits. Instancia completa con DATOS FICTICIOS.
 
 ABRIR SIN PROGRAMAR
@@ -58,7 +58,7 @@ El logo cargado y configuracion de mensajes permanecen en la base de esa carpeta
 Ctrl+C detiene el iniciador. ABRIR-MINIMARKET.cmd vuelve a abrirlo.
 
 VERIFICACION
-61 pruebas: 26 unitarias, 18 de integracion y 17 de navegador; build y TypeScript.
+73 pruebas: 26 unitarias, 27 de integracion y 20 de navegador. Build y TypeScript. Ver GUIA-ETAPA10.md y GUIA-ETAPA11.md; build y TypeScript.
 Prueba adicional: fallo simulado de impresion automatica conserva venta y stock sin duplicados.
 Formatos PDF 58/80 mm comprobados. No equivale a certificar un modelo de impresora fisica.
 El iniciador nativo de Windows no se ejecuta en esta nube Linux; conserva el mecanismo anterior.
@@ -87,3 +87,16 @@ ACTUALIZAR CONSERVANDO LOGO, CUENTAS Y MOVIMIENTOS
 6. En la nueva haz doble clic en ABRIR-MINIMARKET.cmd y espera la actualizacion.
 La base y tu logo estan en .local. No copies solo el PNG: conserva la carpeta completa.
 Si prefieres probar desde cero, no copies nada y conserva la anterior completa para volver.
+
+NOVEDADES - INSTRUCCIONES 10 Y 11
+- Pan: escanea 20 y escribe un importe, por ejemplo 1350. No inventa precio/kg ni existencias.
+- F5 confirma eliminar la fila seleccionada; F9 abre cobro; F12 administra productos.
+- Botones y atajos Alt configurables si Windows o el navegador interceptan las teclas.
+- Importes manuales distinguen peso medido, estimacion y cantidad pendiente de conciliar.
+- Inventario inteligente, lotes, vencimientos, mermas, sugerencias revisables y conteos autorizados.
+- Dejar venta en espera: guarda sin cobrar ni descontar stock. Pestaña para recuperar/cancelar.
+- Al volver, ofrece recuperar borrador y comprueba que no este cobrado. No repite automaticamente.
+- Cobros electronicos nuevos requieren verificar la aprobacion en el terminal/banco. No integra el banco.
+- Cierre con desglose guardado; cualquier diferencia requiere autorizacion administrativa.
+- Capturas reales de demostracion incluidas. No se probaron aqui impresora, balanza ni Windows nativo.
+- Las cuentas solicitadas necesitan un correo individual antes de crearlas. No se inventaron accesos.
