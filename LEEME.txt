@@ -1,4 +1,4 @@
-MINIMARKET JS - WINDOWS V8 - CAJA RAPIDA, INVENTARIO Y RECUPERACION
+MINIMARKET JS - WINDOWS V9 - FIADOS, VOUCHERS Y PEDIDOS MOVILES
 Windows 10/11 de 64 bits. Instancia completa con DATOS FICTICIOS.
 
 ABRIR SIN PROGRAMAR
@@ -58,7 +58,7 @@ El logo cargado y configuracion de mensajes permanecen en la base de esa carpeta
 Ctrl+C detiene el iniciador. ABRIR-MINIMARKET.cmd vuelve a abrirlo.
 
 VERIFICACION
-73 pruebas: 26 unitarias, 27 de integracion y 20 de navegador. Build y TypeScript. Ver GUIA-ETAPA10.md y GUIA-ETAPA11.md; build y TypeScript.
+80 pruebas: 26 unitarias, 31 de integracion y 23 de navegador. Build y TypeScript. Ver GUIA-ETAPA10.md y GUIA-ETAPA11.md; build y TypeScript.
 Prueba adicional: fallo simulado de impresion automatica conserva venta y stock sin duplicados.
 Formatos PDF 58/80 mm comprobados. No equivale a certificar un modelo de impresora fisica.
 El iniciador nativo de Windows no se ejecuta en esta nube Linux; conserva el mecanismo anterior.
@@ -100,3 +100,13 @@ NOVEDADES - INSTRUCCIONES 10 Y 11
 - Cierre con desglose guardado; cualquier diferencia requiere autorizacion administrativa.
 - Capturas reales de demostracion incluidas. No se probaron aqui impresora, balanza ni Windows nativo.
 - Las cuentas solicitadas necesitan un correo individual antes de crearlas. No se inventaron accesos.
+
+ETAPA 12
+- Fiados por voucher, abonos parciales/mixtos, recibos e historial de saldos.
+- Timbre PAGADO automatico, impresion y PDF. Anulacion por devolucion autorizada.
+- Celular: Pedidos como inicio, cinco accesos inferiores y borrador de pedidos recuperable.
+- Menu de escritorio con cinco grupos y preferencias por usuario.
+- El Excel real NO fue importado ni incluido. Solo se incluyen datos ficticios.
+- Conserva tu logo y datos: cierra el iniciador, respalda y copia .local, ACCESO.txt
+  y comprobantes-demo a la carpeta nueva antes de abrirla.
+- Ver GUIA-ETAPA12.md. No se comprobo Windows nativo ni impresora en esta revision.
