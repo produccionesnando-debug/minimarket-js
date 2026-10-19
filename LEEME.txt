@@ -1,53 +1,64 @@
-MINIMARKET JS - WINDOWS V5 - RESUMEN FINANCIERO Y ENCARGOS
-Windows 10/11 de 64 bits. Todos los datos son FICTICIOS.
+MINIMARKET JS - WINDOWS V6 - IDENTIDAD, BIENVENIDA Y TICKETS
+Windows 10/11 de 64 bits. Instancia completa con DATOS FICTICIOS.
 
 ABRIR SIN PROGRAMAR
-1. Cierra la demostracion anterior y conserva su carpeta completa.
+1. Cierra la demostracion anterior y conserva una copia de su carpeta completa.
 2. Extrae TODO este ZIP en una carpeta nueva.
 3. En MINIMARKET-JS haz doble clic en ABRIR-MINIMARKET.cmd.
 4. Espera la primera preparacion con Internet. No cierres la ventana.
 5. Se abren navegador y ACCESO.txt. Usa el correo y clave de ese archivo.
+Conserva el iniciador Windows ya probado por el usuario. PostgreSQL incluido y extraido, sin XZ.
 No requiere instalar Node.js, PostgreSQL o Docker por separado.
-PostgreSQL viene extraido: no requiere XZ. Conserva el iniciador que ya pudiste usar.
 
-VENTAS Y CAJA
-- Barra fija: Ventas del dia y Saldo neto del dia destacados.
-- Saldo neto = ventas netas menos egresos operativos. NO ES UTILIDAD CONTABLE.
-- Fila compacta: 4 medios de cobro, credito pendiente y efectivo esperado.
-- En celular desliza esa fila para ver todos los indicadores.
-- Selecciona fecha o turno y pulsa Ver. Dia completo corresponde a tus cajas.
-- Caja esperada por dia: cajas abiertas al terminar ese dia; por turno cerrado, valor del cierre.
-- Escanea 000000001005 y Enter para probar leche ficticia; repite para sumar cantidad.
-- Prueba efectivo, tarjeta, transferencia, mixto, fiado, abonos, merma y devoluciones.
-- Los anticipos cobran dinero sin crear ventas. No vuelven a cobrarse al completar el pedido.
+IDENTIDAD Y LOGO
+- Nueva paleta: azul profundo, turquesa, verde, amarillo; acceso profesional.
+- Menu Identidad del negocio -> Archivo original del logo -> Guardar identidad visual.
+- Selecciona el PNG, JPG o WebP original descargado desde Canva.
+- Se conserva exactamente el archivo, sus colores y proporciones; no se redibuja.
+- Se actualizan acceso, menu, encabezado, iconos PWA e impresion; ticket monocromatico.
+- El archivo pegado en el chat no estaba accesible en esta nube y Canva fue bloqueado por la red.
+  Por eso este paquete usa temporalmente MiniMarket JS EN TEXTO: no inventa un logo oficial.
 
-WHATSAPP - PEDIDOS Y ENCARGOS
-- Abre ese menu. Hay una conversacion y dos encargos FICTICIOS.
-- Pedido de leche: confirmar y reservar, registrar anticipo, completar venta y marcar entregado.
-- Encargo especial: permanece sin producto ni precio hasta asociarlo al catalogo real de prueba.
-- En celular cambia entre Conversaciones, Mensajes y Cliente y pedidos.
-- Las respuestas rapidas solo preparan/copian texto. No envian mensajes.
-- Para usar el catalogo de esta instancia ficticia, deja sin marcar la casilla de conversacion demo.
+BIENVENIDA Y BIBLIOTECA
+- Saludo por hora y dia de Chile, nombre, versiculo y frase de animo.
+- Cierra con X; recuerda cada trabajador/dia. En Inicio, Ver bienvenida permite consultarlo.
+- Menu Versiculos: biblioteca administrable, seleccion breve Reina-Valera 1909 de dominio publico.
+- Menu Impresoras y tickets: papel 58/80 mm, mensajes, cajero, logo e impresion automatica opcional.
 
-GOOGLE / META
-El acceso tradicional funciona. Google permanece deshabilitado sin credenciales propias.
-No hay conexion activa con WhatsApp. El webhook oficial esta preparado, deshabilitado por defecto.
-GUIA-ETAPA6.md explica credenciales, invitaciones Google y configuracion Meta.
-No contiene secretos Google/Meta ni contactos, ventas o accesos reales de tu negocio.
-No publica nada en Internet, procesa tarjetas ni envia mensajes externos.
-Comprobantes internos, no boletas tributarias SII.
+PROBAR TICKETS
+- Menu Ventas y Caja: escanea 000000001008 y Enter, ingresa 10000 para compra de 7350.
+- Teclado numerico, Monto exacto y montos rapidos; falta de efectivo bloquea Cobrar.
+- Veras vuelto de 2650. Cobrar guarda la venta una sola vez y descuenta stock.
+- Despues: Imprimir / reimprimir ticket, o Vista previa del ticket.
+- Tambien abre ventas recientes -> Ver e imprimir ticket.
+- Elegir 58/80 mm. El dialogo de Edge/Chrome permite elegir la impresora o Guardar como PDF.
+- Si no hay impresora o cancelas, la venta sigue guardada. Reimprimir no vuelve a cobrar.
+- Hay un ticket ficticio ya registrado para revisar sin hacer otra venta.
+- Impresoras y tickets -> Pagina de prueba no registra una venta.
+- Los intentos de impresion se auditan como SOLICITUD, no confirman papel impreso.
+- Ticket INTERNO: NO ES BOLETA NI FACTURA TRIBUTARIA SII.
 
-CONSERVAR PRUEBAS
-La base esta en .local de cada carpeta. No la borres.
-Una carpeta nueva no importa automaticamente pruebas anteriores.
-Para actualizar una carpeta previa: primero copia TODA la carpeta, detiene el servidor y
-actualiza los archivos del paquete conservando .local, ACCESO.txt y comprobantes.
-El restaurador aplica solo migraciones pendientes y no vuelve a sembrar datos existentes.
-Los nuevos encargos de ejemplo se incluyen solo en instalaciones nuevas.
-Para detener usa Ctrl+C en el iniciador; para volver, ABRIR-MINIMARKET.cmd.
+IMPORTACION EXCEL
+- Precio PedidosYa es opcional; al informarlo se guarda como precio fijo.
+- Actualizar precios existentes requiere vista previa y confirmacion. Una celda vacia conserva el precio.
+
+DATOS Y LIMITES
+El paquete no contiene proveedores, contactos, ventas ni documentos reales del negocio.
+Solo la instancia privada de la nube conserva el directorio real. No se traslada publicamente.
+Google y WhatsApp real siguen pendientes de credenciales. No se envian mensajes externos.
+PedidosYa sigue desconectado. No se procesan tarjetas, bancos ni documentos fiscales.
+No se ha probado una impresora fisica. Ver GUIA-TICKETS.md para Windows y alternativa ESC/POS.
+
+CONSERVAR TUS PRUEBAS
+La base esta en .local de cada carpeta; no la borres. Cierra la anterior antes de abrir esta.
+Carpeta nueva no copia tus movimientos previos. Conserva completa la carpeta anterior.
+Para actualizar: primero respaldar TODA la carpeta y detener el servidor; conservar .local,
+ACCESO.txt y comprobantes al reemplazar archivos. Las migraciones no vuelven a sembrar datos.
+El logo cargado y configuracion de mensajes permanecen en la base de esa carpeta.
+Ctrl+C detiene el iniciador. ABRIR-MINIMARKET.cmd vuelve a abrirlo.
 
 VERIFICACION
-51 pruebas: 24 unitarias, 13 de integracion y 14 de navegador; build y TypeScript.
-Paquete de produccion/restauracion nueva y actualizacion probados en Linux.
-El inicio nativo de Windows no puede ejecutarse en esta nube; se conserva el mecanismo
-que confirmaste funcionando. Google y Meta requieren validacion externa autorizada.
+56 pruebas: 24 unitarias, 16 de integracion y 16 de navegador; build y TypeScript.
+Prueba adicional: fallo simulado de impresion automatica conserva venta y stock sin duplicados.
+Formatos PDF 58/80 mm comprobados. No equivale a certificar un modelo de impresora fisica.
+El iniciador nativo de Windows no se ejecuta en esta nube Linux; conserva el mecanismo anterior.
