@@ -1,4 +1,4 @@
-MINIMARKET JS - WINDOWS V9 - FIADOS, VOUCHERS Y PEDIDOS MOVILES
+MINIMARKET JS - WINDOWS V10 - PEDIDOS INTELIGENTES Y WHATSAPP
 Windows 10/11 de 64 bits. Instancia completa con DATOS FICTICIOS.
 
 ABRIR SIN PROGRAMAR
@@ -58,7 +58,7 @@ El logo cargado y configuracion de mensajes permanecen en la base de esa carpeta
 Ctrl+C detiene el iniciador. ABRIR-MINIMARKET.cmd vuelve a abrirlo.
 
 VERIFICACION
-80 pruebas: 26 unitarias, 31 de integracion y 23 de navegador. Build y TypeScript. Ver GUIA-ETAPA10.md y GUIA-ETAPA11.md; build y TypeScript.
+86 pruebas: 26 unitarias, 33 de integracion y 27 de navegador. Build y TypeScript. Ver GUIA-ETAPA10.md y GUIA-ETAPA11.md; build y TypeScript.
 Prueba adicional: fallo simulado de impresion automatica conserva venta y stock sin duplicados.
 Formatos PDF 58/80 mm comprobados. No equivale a certificar un modelo de impresora fisica.
 El iniciador nativo de Windows no se ejecuta en esta nube Linux; conserva el mecanismo anterior.
@@ -110,3 +110,18 @@ ETAPA 12
 - Conserva tu logo y datos: cierra el iniciador, respalda y copia .local, ACCESO.txt
   y comprobantes-demo a la carpeta nueva antes de abrirla.
 - Ver GUIA-ETAPA12.md. No se comprobo Windows nativo ni impresora en esta revision.
+
+ETAPA 13 - COMPRAS RAPIDAS
+- Compras > Pedidos > Crear pedido: seleccionar proveedor carga la plantilla y sugerencias.
+- Cantidades anteriores, stock conocido, minimo y sugerencia diferenciados; revisar antes de comprar.
+- Agregar/quitar/buscar, +/-, productos nuevos con ficha pendiente y observaciones guardadas.
+- Compartir pedido por WhatsApp guarda primero; revisar/editar texto y elegir vendedor.
+- No incluye costos internos. Contactos de comprobantes quedan excluidos.
+- Abrir WhatsApp no envia ni cambia estado. Confirmar manualmente despues de enviar.
+- Lista habitual por proveedor: cantidades, unidades, codigo, orden y activo/inactivo.
+- Guardar como habitual o agregar sin reemplazar; exige confirmar reemplazos.
+- Las listas no cambian pedidos historicos ni se actualizan automaticamente.
+- Cantidades enteras; cajas/paquetes/kg no se convierten automaticamente a stock.
+- Demostracion: proveedor DEMO de pedido movil y tres productos ficticios; no son datos reales.
+- Capturas y GUIA-ETAPA13.md incluidas. API/lectura automatica de WhatsApp no conectadas.
+- Antes de actualizar, cerrar y respaldar; conservar .local, ACCESO.txt y comprobantes-demo.
